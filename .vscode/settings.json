@@ -1,7 +1,45 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
   "files.associations": {
     "*.css": "sciter-css",
-    "*.html": "sciter-html",
-    "*.htm": "sciter-html"
-  }
+    "*.htm": "sciter-html",
+    "*.html": "sciter-html"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "psi-header.changes-tracking": {
+    "autoHeader": "off",
+    "exclude": ["markdown", "json", "html", "vue"],
+    "isActive": true
+  },
+  "psi-header.lang-config": [
+    {
+      "begin": "/**",
+      "end": " */",
+      "language": "javascript",
+      "prefix": " * "
+    },
+    {"language": "typescript", "mapTo": "javascript"},
+    {"language": "css", "mapTo": "javascript"},
+    {"language": "less", "mapTo": "javascript"},
+    {"language": "scss", "mapTo": "javascript"},
+    {"language": "sass", "mapTo": "javascript"}
+  ],
+  "psi-header.templates": [
+    {
+      "language": "*",
+      "template": [
+        "This file is part of the sciter-boilerplate project.",
+        "@link     : https://zhaiyiming.com/",
+        "@author   : <<author>> (<<authoremail>>)",
+        "@modifier : <<author>> (<<authoremail>>)",
+        "@copyright: Copyright (c) 2022 TINYMINS."
+      ]
+    }
+  ]
 }
