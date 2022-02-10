@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.css": "sciter-css",
+    "*.html": "sciter-html",
+    "*.htm": "sciter-html"
+  }
+}
