@@ -1,0 +1,79 @@
+@set talent {
+  :root {
+    display: block;
+  }
+
+  .talent {
+    flow: horizontal;
+    background-color: #2e4946;
+    border-radius: 5pt;
+    box-shadow: 0 0 3pt #00000066;
+    padding: 4pt 20pt 4pt 0;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .talent-title {
+    margin: 0 10pt;
+    padding: 5pt;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .talent-title-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5pt 2pt;
+    width: 1.5em;
+    height: 65pt;
+    background: url(https://img.jx3box.com/img/qixue/label.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+
+  .talent-title-char {
+    padding: 1pt 0;
+    font-size: 11pt;
+    color: #ffffff;
+    text-shadow: 1dip 1dip 1dip #000000e6;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .talent-item {
+    display: flex;
+    margin: 12pt 3pt;
+    position: relative;
+  }
+
+  .talent-item-icon-wrapper {
+    padding: 5pt;
+  }
+
+  .talent-item-icon {
+    width: 42pt;
+    height: 42pt;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .talent-item-icon-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52pt;
+    height: 52pt;
+    background: url(https://img.jx3box.com/img/qixue/bg.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+
+  .talent-item-name {
+    margin-top: 2pt;
+    color: #ffffff;
+    text-shadow: 1dip 1dip 1dip #000000e6;
+    text-align: center;
+  }
+}
