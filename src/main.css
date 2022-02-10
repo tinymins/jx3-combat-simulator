@@ -1,0 +1,28 @@
+/*
+ * This file is part of the sciter-boilerplate project.
+ * @link     : https://zhaiyiming.com/
+ * @author   : Emil Zhai (root@derzh.com)
+ * @modifier : Emil Zhai (root@derzh.com)
+ * @copyright: Copyright (c) 2022 TINYMINS.
+ */
+
+html {
+  var(accent-color): window-accent-color;
+  border: window-frame-width solid transparent;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+html:owns-focus {
+  border-color: morph(color(accent-color), opacity: 50%);
+}
+
+html > body {
+  margin: 4dip 8dip;
+}
+
+@set wrapper {
+  :root {
+    padding-top: window-caption-height;
+  }
+}
