@@ -18,11 +18,11 @@ html:owns-focus {
 }
 
 html > body {
-  margin: 4dip 8dip;
+  margin: 0dip 8dip;
 }
 
 @set wrapper {
   :root {
-    padding-top: window-caption-height;
+    padding-top: 30pt;
   }
 }
