@@ -11,6 +11,16 @@ import { $ } from "@sciter";
 import { SIMULATOR_NAME } from './config/index.js';
 
 const view = Window.this;
+if (view) {
+  view.caption = SIMULATOR_NAME;
+}
 
-view.caption = SIMULATOR_NAME;
-$('title').textContent = SIMULATOR_NAME;
+const titleEl = $('title');
+if (titleEl) {
+  titleEl.textContent = SIMULATOR_NAME;
+}
+
+const captionEl = $('window-caption');
+if (captionEl) {
+  captionEl.textContent = SIMULATOR_NAME;
+}
