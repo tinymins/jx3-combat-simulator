@@ -46,6 +46,15 @@
     display: flex;
     margin: 12pt 3pt;
     position: relative;
+    cursor: pointer;
+  }
+
+  .talent-item-wrapper:hover .talent-item-icon-wrapper {
+    background: #ffffff11;
+  }
+
+  .talent-item-wrapper:active .talent-item-icon-wrapper {
+    background: #ffffff22;
   }
 
   .talent-item-icon-wrapper {
@@ -75,5 +84,51 @@
     color: #ffffff;
     text-shadow: 1dip 1dip 1dip #000000e6;
     text-align: center;
+  }
+
+  .talent-item-select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 52pt;
+    margin-top: 10pt;
+    padding: 5pt 0;
+    background: #2e4946;
+    border: 1dip solid #ffffff66;
+    border-radius: 3pt;
+    transition: height .3s ease-in-out, opacity .3s ease-in-out;
+  }
+
+  .talent-item-select-option {
+    paddin: 4pt 0;
+    height: 60pt;
+    opacity: .8;
+  }
+
+  .talent-item-select-option:hover {
+    opacity: .9;
+  }
+
+  .talent-item-select-option:active {
+    opacity: 1;
+  }
+
+  .talent-item-select-option__icon {
+    width: 52pt;
+    height: 42pt;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 38pt 38pt;
+  }
+
+  .talent-item-select-option__name {
+    margin-top: 2pt;
+    color: #ffffff;
+    text-shadow: 1dip 1dip 1dip #000000e6;
+    text-align: center;
+  }
+
+  .talent-item-select-option + .talent-item-select-option {
+    margin-top: 4pt;
   }
 }
