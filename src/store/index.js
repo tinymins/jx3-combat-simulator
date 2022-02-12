@@ -8,6 +8,7 @@
 
 import { DEFAULT_KUNGFU, DEFAULT_TALENT } from '../config/index.js';
 import { KUNGFU_DATABASE } from '../database/kungfu.js';
+import { STATS_DATABASE } from '../database/stats.js';
 import { TALENT_DATABASE } from '../database/talent.js';
 
 /**
@@ -17,9 +18,11 @@ import { TALENT_DATABASE } from '../database/talent.js';
  */
 const createConfig = (kungfuId) => {
   const kungfu = KUNGFU_DATABASE.find(k => k.id === kungfuId) || KUNGFU_DATABASE[0];
+  const stats = STATS_DATABASE.find(p => p.kungfu === kungfuId).stats;
   const talent = TALENT_DATABASE.find(t => t.kungfu === kungfuId);
   const config = {
     kungfu: kungfu,
+    stats: Object.fromEntries(stats.filter(p => 'defaultValue' in p).map(p => [p.key, p.defaultValue])),
     talent: talent.slots.map((slotOptions, slotIndex) => slotOptions.find(t => t.id === DEFAULT_TALENT[kungfu.id][slotIndex]) || slotOptions[0]),
   };
   return config;

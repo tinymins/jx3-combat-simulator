@@ -1,0 +1,49 @@
+@set stats {
+  :root {
+    background-color: #2e4946;
+    border-radius: 5pt;
+    box-shadow: 0 0 3pt #00000066;
+    padding: 8pt 10pt;
+    display: inline-block;
+    flow: horizontal;
+    margin: 0 auto 10pt;
+  }
+
+  .stats-names {
+    padding-right: 5pt;
+  }
+
+  .stats-values {
+  }
+
+  .stats-item-name, .stats-item-value {
+    display: block;
+    margin: 3pt 0;
+    height: 1.4em;
+    line-height: 1.4em;
+  }
+
+  .stats-item-name {
+    color: #ffffff;
+  }
+
+  .stats-item-value {
+    width: 80pt;
+    color: #ffffff;
+    style-set: "std-number-edit-base";
+    flow: vertical;
+    behavior: edit;
+    context-menu: url(sciter:menu-edit.htm);
+    cursor: text;
+    overflow-x: hidden-scroll;
+    flow: text;
+    white-space: pre;
+    text-align: start;
+    background: #00000066;
+  }
+
+  .stats-item-value:disabled {
+    color: #ffffff99;
+    background: #00000033;
+  }
+}

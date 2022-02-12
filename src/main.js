@@ -6,7 +6,7 @@
  * @copyright: Copyright (c) 2022 TINYMINS.
  */
 
-import { $ } from "@sciter";
+import { $ } from '@sciter';
 
 import { SIMULATOR_NAME } from './config/index.js';
 

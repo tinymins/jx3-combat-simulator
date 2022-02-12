@@ -1,3 +1,11 @@
+/**
+ * This file is part of the sciter-boilerplate project.
+ * @link     : https://zhaiyiming.com/
+ * @author   : Emil Zhai (root@derzh.com)
+ * @modifier : Emil Zhai (root@derzh.com)
+ * @copyright: Copyright (c) 2022 TINYMINS.
+ */
+
 // Reactor is available out of the box.
 // This sample is modelled after https://preactjs.com/guide/v10/components#class-components
 
